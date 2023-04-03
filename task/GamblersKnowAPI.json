@@ -1,0 +1,29 @@
+{
+	"page_logo": "you can edit this with image location to display the image",
+	"header": "Claim up to 500 free spins!",
+	"colors": {
+		"header_text_color": "#ffffff",
+		"subheader_text_color": "#ffffff",
+		"button_color": "#46e65a",
+		"underline_color": "#46e65a",
+		"background_color": "black",
+		"footer_color": "#46e65a",
+		"footer_text_color": "#ffffff",
+		"footer_headline_text_color": "#46e65a"
+	},
+	"button_text": "Claim",
+	"subheader": "+ 100 free spins on your first deposit",
+	"terms_and_conditions": "18+. T&Cs Apply - New players only. Offers valid across multiple providers. Wagering requirements and withdrawal restrictions apply. Valid until further notice. See chosen provider's site for full T&Cs.",
+	"login_fields":{
+		"field_name_text": "Name",
+		"field_email_text": "E-mail",
+		"field_adress_text": "Adress",
+		"field_surname_text": "Surname"
+	},
+	"footer_logos":{
+		"logo_1": "you can edit this with image location to display the image",
+		"logo_2": "you can edit this with image location to display the image",
+		"logo_3": "you can edit this with image location to display the image",
+		"logo_4": "you can edit this with image location to display the image"
+	}
+}
