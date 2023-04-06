@@ -18,13 +18,41 @@ padding: 0;
     display: flex;
     justify-content: space-between;
 }
+.left_img,
+.middle_inner,
+.right_img {
+flex-basis: 33.333%;
+}
 img {
     max-width: 100%;
 }
-
-.headerText {
-    font-size: 20px;
+.header {
+    font-size: 60px;
+    width: 40%;
+}
+.subheader {
+    font-size: 30px;
+}
+hr {
+    width: 30%;
+}
+.terms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.terms p {
     color: white;
+    border-right: solid 2px white;
+    padding-right: 10px;
+}
+.gaming {
+    text-align: center;
+    padding-top: 40px;
+}
+.gaming p {
+    font-weight: 35px;
 }
 
 
