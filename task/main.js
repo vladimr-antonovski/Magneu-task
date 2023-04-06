@@ -11,9 +11,18 @@ const getData = () => {
       const navbar = document.querySelector('.nav')
       navbar.style.backgroundColor = bgColor;
 
-      let headerColor = array.colors.header_text_color;
-      let heading =  document.querySelector('.heading')
-      heading.style.color = headerColor;
+const logoImg =  document.createElement('img')
+logoImg.src = array.page_logo;
+navbar.append(logoImg);
+
+let middleDiv = document.querySelector('.middle_inner')
+let headerTxt = document.querySelector('.header');
+headerTxt.innerHTML = array.header + array.colors.header_text_color;
+middleDiv.append(headerTxt)
+
+
+
+
 
     });
 };

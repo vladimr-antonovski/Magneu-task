@@ -1,4 +1,4 @@
-body {
+body, p {
 margin: 0;
 padding: 0;
 }
@@ -6,9 +6,26 @@ padding: 0;
 .nav {
     display: flex;
     justify-content: center;
+    padding: 15px 0;
 }
 
 .grey_container {
     background-color: grey;
 }
+
+.grey_container {
+    background-color: #474747;
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    max-width: 100%;
+}
+
+.headerText {
+    font-size: 20px;
+    color: white;
+}
+
+
 

@@ -1,5 +1,5 @@
 {
-	"page_logo": "you can edit this with image location to display the image",
+	"page_logo": "./png/logo.png",
 	"header": "Claim up to 500 free spins!",
 	"colors": {
 		"header_text_color": "#ffffff",
