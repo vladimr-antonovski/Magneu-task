@@ -51,9 +51,45 @@ hr {
     text-align: center;
     padding-top: 40px;
 }
-.gaming p {
-    font-weight: 35px;
+
+.logo {
+    width: 20%;
 }
+.disclaimer {
+    font-size: 30px;
+}
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.text-addiction {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logos-footer {
+    width: 40%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-text {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.border-right {
+    border-right: solid 2px black;
+    padding-right: 5px;
+}
+
 
 
 

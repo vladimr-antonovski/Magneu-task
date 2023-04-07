@@ -13,6 +13,7 @@ const getData = () => {
 
 const logoImg =  document.createElement('img')
 logoImg.src = array.page_logo;
+logoImg.classList.add("logo")
 navbar.append(logoImg);
 
 let middleDiv = document.querySelector('.middle_inner')
@@ -38,6 +39,18 @@ terms_conditions.style.backgroundColor = array.colors.background_color
 
 const waring = document.querySelector('.disclaimer');
 waring.style.color = array.colors.button_color;
+
+const textAddiction = document.querySelector('.text-addiction');
+textAddiction.style.color = array.colors.header_text_color;
+
+const UKGG = document.querySelector(".text-UKGG");
+UKGG.style.color = array.colors.header_text_color;
+
+const footer = document.querySelector(".footer");
+footer.style.backgroundColor = array.colors.footer_color;
+
+const footerTxt = document.querySelector(".footer-text");
+footerTxt.style.color = array.colors.background_color;
 
 
 
