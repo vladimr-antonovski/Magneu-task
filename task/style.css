@@ -89,6 +89,22 @@ hr {
     border-right: solid 2px black;
     padding-right: 5px;
 }
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    background-color: transparent;
+    padding-top: 20px;
+  }
+  ::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  input {
+    text-align: center;
+  }
+
+
+
 
 
 

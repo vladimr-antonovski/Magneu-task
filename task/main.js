@@ -32,7 +32,24 @@ let text = document.createElement('p')
 text.innerText = "Add your name and email below to gain instant access to our exclusive bonuses"
 text.style.color = array.colors.header_text_color;
 
-middleDiv.append(headerTxt, subheader, underline, text)
+const nameInput = document.createElement("input")
+nameInput.type = "text"
+nameInput.placeholder = "Name"
+nameInput.style.display = "block"
+nameInput.style.borderColor = array.colors.underline_color
+
+
+const emailInput = document.createElement("input");
+emailInput.type = "text";
+emailInput.placeholder = "E-mail"
+emailInput.style.borderColor = array.colors.underline_color;
+
+const inputs_div = document.createElement("div");
+
+
+inputs_div.append(nameInput,emailInput);
+
+middleDiv.append(headerTxt, subheader, underline, text, inputs_div)
 
 let terms_conditions = document.querySelector('.terms_conditions')
 terms_conditions.style.backgroundColor = array.colors.background_color
