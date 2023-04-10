@@ -1,0 +1,21 @@
+body, p, h1 {
+    margin: 0;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.logo {
+    width: 20%;
+}
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.sub_header {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+}

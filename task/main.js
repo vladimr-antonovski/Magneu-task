@@ -69,11 +69,6 @@ footer.style.backgroundColor = array.colors.footer_color;
 const footerTxt = document.querySelector(".footer-text");
 footerTxt.style.color = array.colors.background_color;
 
-
-
-
-
-
     });
 };
 getData();
