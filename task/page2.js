@@ -26,6 +26,7 @@ const fetchData = () => {
     subText.style.color = api.colors.header_text_color;
     subText.classList.add('sub_header')
 
+
     grey_container.append(h1, subText)
 
 
