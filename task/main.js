@@ -36,6 +36,7 @@ text.style.color = array.colors.header_text_color;
 
 
 const nameInput = document.createElement("input")
+nameInput.id = "name";
 nameInput.type = "text"
 nameInput.placeholder = "Name"
 nameInput.style.display = "block"
@@ -44,6 +45,7 @@ nameInput.style.borderColor = array.colors.underline_color
 
 
 const emailInput = document.createElement("input");
+emailInput.id = "email"
 emailInput.type = "text";
 emailInput.name = "text1"
 emailInput.placeholder = "E-mail"
@@ -54,8 +56,12 @@ emailInput.style.paddingBottom = "10px";
 
 emailInput.style.borderColor = array.colors.underline_color;
 
+const Form = document.createElement("form");
+Form.name = "form1";
 const inputs_form = document.createElement("form")
 inputs_form.action = "/";
+
+Form.appendChild(inputs_form);
 
 const radios = document.querySelector(".inputs_form");
 
@@ -74,6 +80,9 @@ const button = document.createElement("button")
 button.style.backgroundColor = array.colors.button_color;
 button.setAttribute("type", "submit");
 button.innerText = array.button_text;
+
+button.addEventListener("submit", validateEmail);
+
 div_button.append(button)
 
 const TA_div = document.createElement("div")
@@ -113,23 +122,17 @@ const footerTxt = document.querySelector(".footer-text");
 footerTxt.style.color = array.colors.background_color;
 
 
-
 function validateEmail() {
-  let characters = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  if(emailInput.value.match(characters)) {
-    alert("You have entered a valid email address")
-    document.form1.text1.focus();
-    return true
-  }
-  else {
-    alert("You have entered an invalid email address");
-    document.form1.text1.focus()
-    return false
-  }
+  let characters =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+if(emailInput.value.match(characters)) {
+emailInput.style.backgroundColor = "green"
 }
-
-
+else {
+  alert("Invalid email address");
+}
+}
     });
 };
 getData();
