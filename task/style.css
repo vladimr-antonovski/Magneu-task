@@ -1,4 +1,4 @@
-body, p {
+body, p, h1 {
 margin: 0;
 padding: 0;
 }
@@ -36,12 +36,21 @@ img {
 hr {
     width: 30%;
 }
-.terms {
+/* .terms {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding-top: 20px;
+} */
+.TA {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    align-items: center;
 }
+
+
 .terms p {
     color: white;
     border-right: solid 2px white;
@@ -101,7 +110,33 @@ input {
   }
   input {
     text-align: center;
+    margin: 0;
   }
+
+  .input1 {
+    padding-bottom: 10px;
+  }
+  .div_button {
+display: flex;
+justify-content: center;
+  }
+
+  button {
+    margin: 20px 0;
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .terms_text {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+ 
 
  
 

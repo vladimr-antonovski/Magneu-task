@@ -32,16 +32,26 @@ let text = document.createElement('p')
 text.innerText = "Add your name and email below to gain instant access to our exclusive bonuses"
 text.style.color = array.colors.header_text_color;
 
+
+
+
 const nameInput = document.createElement("input")
 nameInput.type = "text"
 nameInput.placeholder = "Name"
 nameInput.style.display = "block"
+nameInput.style.paddingBottom = "10px";
 nameInput.style.borderColor = array.colors.underline_color
 
 
 const emailInput = document.createElement("input");
 emailInput.type = "text";
+emailInput.name = "text1"
 emailInput.placeholder = "E-mail"
+emailInput.style.marginBottom = "30px";
+emailInput.style.paddingBottom = "10px";
+
+
+
 emailInput.style.borderColor = array.colors.underline_color;
 
 const inputs_form = document.createElement("form")
@@ -58,6 +68,23 @@ label2.style.color = array.colors.header_text_color;
 const greenSpan = document.querySelector('.green');
 greenSpan.style.color = array.colors.button_color;
 
+const div_button = document.createElement("div");
+div_button.classList.add("div_button");
+const button = document.createElement("button")
+button.style.backgroundColor = array.colors.button_color;
+button.setAttribute("type", "submit");
+button.innerText = array.button_text;
+div_button.append(button)
+
+const TA_div = document.createElement("div")
+TA_div.classList.add("center-div")
+const termsAndConditions = document.createElement("p");
+termsAndConditions.classList.add("terms_text")
+termsAndConditions.innerHTML = array.terms_and_conditions;
+termsAndConditions.style.color = array.colors.header_text_color;
+
+TA_div.append(termsAndConditions);
+
 
 
 
@@ -65,7 +92,7 @@ greenSpan.style.color = array.colors.button_color;
 
 inputs_form.append(nameInput,emailInput, radios);
 
-middleDiv.append(headerTxt, subheader, underline, text, inputs_form)
+middleDiv.append(headerTxt, subheader, underline, text, inputs_form, div_button, TA_div)
 
 let terms_conditions = document.querySelector('.terms_conditions')
 terms_conditions.style.backgroundColor = array.colors.background_color
@@ -84,6 +111,24 @@ footer.style.backgroundColor = array.colors.footer_color;
 
 const footerTxt = document.querySelector(".footer-text");
 footerTxt.style.color = array.colors.background_color;
+
+
+
+function validateEmail() {
+  let characters = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if(emailInput.value.match(characters)) {
+    alert("You have entered a valid email address")
+    document.form1.text1.focus();
+    return true
+  }
+  else {
+    alert("You have entered an invalid email address");
+    document.form1.text1.focus()
+    return false
+  }
+}
+
 
     });
 };

@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="./style.css" />
 </head>
-  <body>
+  <body onload="document.form1.text1.focus()">
 
     <nav class="nav">
       
@@ -38,11 +38,14 @@
 <div class="terms_conditions">
 
   <div class="terms">
-<p>Terms & Conditions</p>
-<p>Privacy Policy</p>
-<p>Contact Us</p>
-<p>Unsubscribe</p>
-<p>Disclaimer</p>
+    <div class="TA">
+      <p>Terms & Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Contact Us</p>
+      <p>Unsubscribe</p>
+      <p>Disclaimer</p>
+    </div>
+
   </div>
 
   <div class="gaming">
@@ -62,8 +65,8 @@
 <div class="inputs_form">
 
   <div class="input1">
-    <input class="input1" type="radio" id="html">
-    <label class="label1" for="html">I consent to receive updates about offers and bonuses via email.Your information will not be shared.You can opt out at any time</label>
+    <input  type="radio" id="html">
+    <label class="label1" for="html">I consent to receive updates about offers and bonuses via email.Your information will not be shared. You can opt out at any time</label>
   </div>
 <div class="input2">
   <input type="radio" id="radio1">
