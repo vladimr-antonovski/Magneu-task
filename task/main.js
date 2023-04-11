@@ -50,7 +50,7 @@ inputs_form.action = "/";
 const radios = document.querySelector(".inputs_form");
 
 const label1 = document.querySelector(".label1");
-label1.style.color = array.colors.header_text_color;
+label1.style.color = array.colors.header_text_color;3
 
 const label2 = document.querySelector(".label2");
 label2.style.color = array.colors.header_text_color;
