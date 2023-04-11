@@ -44,12 +44,13 @@ emailInput.type = "text";
 emailInput.placeholder = "E-mail"
 emailInput.style.borderColor = array.colors.underline_color;
 
-const inputs_div = document.createElement("div");
+const inputs_form = document.createElement("form")
 
 
-inputs_div.append(nameInput,emailInput);
 
-middleDiv.append(headerTxt, subheader, underline, text, inputs_div)
+inputs_form.append(nameInput,emailInput);
+
+middleDiv.append(headerTxt, subheader, underline, text, inputs_form)
 
 let terms_conditions = document.querySelector('.terms_conditions')
 terms_conditions.style.backgroundColor = array.colors.background_color
