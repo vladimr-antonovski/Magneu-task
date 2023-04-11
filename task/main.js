@@ -45,10 +45,25 @@ emailInput.placeholder = "E-mail"
 emailInput.style.borderColor = array.colors.underline_color;
 
 const inputs_form = document.createElement("form")
+inputs_form.action = "/";
+
+const radios = document.querySelector(".inputs_form");
+
+const label1 = document.querySelector(".label1");
+label1.style.color = array.colors.header_text_color;
+
+const label2 = document.querySelector(".label2");
+label2.style.color = array.colors.header_text_color;
+
+const greenSpan = document.querySelector('.green');
+greenSpan.style.color = array.colors.button_color;
 
 
 
-inputs_form.append(nameInput,emailInput);
+
+
+
+inputs_form.append(nameInput,emailInput, radios);
 
 middleDiv.append(headerTxt, subheader, underline, text, inputs_form)
 
